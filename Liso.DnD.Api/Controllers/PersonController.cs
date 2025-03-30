@@ -55,8 +55,8 @@ namespace Liso.DnD
             string? outputFilePath = _configuration["SaveFilePath"];
             if (string.IsNullOrWhiteSpace(outputFilePath))
             {
-                _personLogger.LogError("Output file path is not configured.");
-                throw new InvalidOperationException("Output file path is not configured.");
+                _personLogger.LogWarning("Output file path is not configured.");
+                outputFilePath = "./sorted-names-list.txt";
             }
 
             try
