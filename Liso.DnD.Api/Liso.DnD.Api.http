@@ -1,0 +1,6 @@
+@Liso.DnD.Api_HostAddress = http://localhost:5079
+
+GET {{Liso.DnD.Api_HostAddress}}/person/
+Accept: application/json
+
+###
